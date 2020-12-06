@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
-
+import StoreKit
 struct HelpButtonsStack: View {
+    
+    
+    
     var body: some View {
-        
         HStack(alignment: .bottom,spacing: 20){
-            Button(action: {}, label: {
+            Button(action: {
+                shareApp()
+            }, label: {
                 Image("shareIcon")
                     .resizable()
                     .padding()
@@ -19,7 +23,9 @@ struct HelpButtonsStack: View {
             .frame(width: 90, height: 90, alignment: .center)
             .makeCustomRoundedButton(backgroundColor: AmongColors.blue)
             
-            Button(action: {}, label: {
+            Button(action: {
+                ReviewService.shared.getRating()
+            }, label: {
                 Image(systemName: "star.fill")
                     .font(.system(size: 80))
                     .padding()
@@ -35,8 +41,8 @@ struct HelpButtonsStack: View {
             .frame(width: 90, height: 90, alignment: .center)
             .makeCustomRoundedButton(backgroundColor: AmongColors.purple)
         }
-        
     }
+    
 }
 
 struct HelpButtonsStack_Previews: PreviewProvider {
