@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		255B62467023EE9A0F7B1092 /* Pods_AmongUSSoundboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1701C5869EF0F86381F63C2C /* Pods_AmongUSSoundboard.framework */; };
 		84530469257C7F0B00F0816E /* AmongSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530468257C7F0B00F0816E /* AmongSound.swift */; };
 		8453049D257C813300F0816E /* Kill.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8453046D257C813100F0816E /* Kill.mp3 */; };
 		8453049E257C813300F0816E /* Message.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8453046E257C813100F0816E /* Message.mp3 */; };
@@ -86,9 +87,17 @@
 		845A3A24257BF2C100735EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A3A23257BF2C100735EDF /* Preview Assets.xcassets */; };
 		845A3A27257BF2C100735EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A3A25257BF2C100735EDF /* LaunchScreen.storyboard */; };
 		845A3A44257BF97800735EDF /* SoundsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A43257BF97800735EDF /* SoundsList.swift */; };
+		846DBDAD257D29460055AAE7 /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDAC257D29460055AAE7 /* BannerVC.swift */; };
+		846DBDB0257D29C10055AAE7 /* AdsIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDAF257D29C10055AAE7 /* AdsIDs.swift */; };
+		846DBDB6257D2D8B0055AAE7 /* InAppPurchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */; };
+		846DBDB7257D2D8B0055AAE7 /* InAppStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */; };
+		846DBDB8257D2D8B0055AAE7 /* StoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1701C5869EF0F86381F63C2C /* Pods_AmongUSSoundboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmongUSSoundboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E80E16E2A8E29B027FF5CC8 /* Pods-AmongUSSoundboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmongUSSoundboard.release.xcconfig"; path = "Target Support Files/Pods-AmongUSSoundboard/Pods-AmongUSSoundboard.release.xcconfig"; sourceTree = "<group>"; };
+		7BEF36584B0E042035DD13F0 /* Pods-AmongUSSoundboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmongUSSoundboard.debug.xcconfig"; path = "Target Support Files/Pods-AmongUSSoundboard/Pods-AmongUSSoundboard.debug.xcconfig"; sourceTree = "<group>"; };
 		84530468257C7F0B00F0816E /* AmongSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmongSound.swift; sourceTree = "<group>"; };
 		8453046D257C813100F0816E /* Kill.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Kill.mp3; sourceTree = "<group>"; };
 		8453046E257C813100F0816E /* Message.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Message.mp3; sourceTree = "<group>"; };
@@ -170,6 +179,12 @@
 		845A3A26257BF2C100735EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845A3A28257BF2C100735EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845A3A43257BF97800735EDF /* SoundsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsList.swift; sourceTree = "<group>"; };
+		846DBDAC257D29460055AAE7 /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
+		846DBDAF257D29C10055AAE7 /* AdsIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsIDs.swift; sourceTree = "<group>"; };
+		846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchView.swift; sourceTree = "<group>"; };
+		846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppStoreModel.swift; sourceTree = "<group>"; };
+		846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreApp.swift; sourceTree = "<group>"; };
+		846DBDBA257D2DAD0055AAE7 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8453056E257D0E3D00F0816E /* StoreKit.framework in Frameworks */,
+				255B62467023EE9A0F7B1092 /* Pods_AmongUSSoundboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				8453056D257D0E3D00F0816E /* StoreKit.framework */,
+				1701C5869EF0F86381F63C2C /* Pods_AmongUSSoundboard.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,6 +318,7 @@
 				845A3A19257BF2C000735EDF /* AmongUSSoundboard */,
 				845A3A18257BF2C000735EDF /* Products */,
 				8453056C257D0E3D00F0816E /* Frameworks */,
+				ED4E7382ECDC85DAB42716B2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -315,6 +333,8 @@
 		845A3A19257BF2C000735EDF /* AmongUSSoundboard */ = {
 			isa = PBXGroup;
 			children = (
+				846DBDB2257D2D670055AAE7 /* InApp */,
+				846DBDAB257D29310055AAE7 /* Advertisement */,
 				845A3A3E257BF3E900735EDF /* Core */,
 				845304DE257C973100F0816E /* Utils */,
 				845304CD257C8C3100F0816E /* Services */,
@@ -439,6 +459,35 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		846DBDAB257D29310055AAE7 /* Advertisement */ = {
+			isa = PBXGroup;
+			children = (
+				846DBDAC257D29460055AAE7 /* BannerVC.swift */,
+				846DBDAF257D29C10055AAE7 /* AdsIDs.swift */,
+			);
+			path = Advertisement;
+			sourceTree = "<group>";
+		};
+		846DBDB2257D2D670055AAE7 /* InApp */ = {
+			isa = PBXGroup;
+			children = (
+				846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */,
+				846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */,
+				846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */,
+				846DBDBA257D2DAD0055AAE7 /* Configuration.storekit */,
+			);
+			path = InApp;
+			sourceTree = "<group>";
+		};
+		ED4E7382ECDC85DAB42716B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BEF36584B0E042035DD13F0 /* Pods-AmongUSSoundboard.debug.xcconfig */,
+				3E80E16E2A8E29B027FF5CC8 /* Pods-AmongUSSoundboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,9 +495,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 845A3A2B257BF2C100735EDF /* Build configuration list for PBXNativeTarget "AmongUSSoundboard" */;
 			buildPhases = (
+				2C2D0A0E38ECF72A4824EA33 /* [CP] Check Pods Manifest.lock */,
 				845A3A13257BF2C000735EDF /* Sources */,
 				845A3A14257BF2C000735EDF /* Frameworks */,
 				845A3A15257BF2C000735EDF /* Resources */,
+				0922E74A51316073F1B8021A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -552,6 +603,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0922E74A51316073F1B8021A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmongUSSoundboard/Pods-AmongUSSoundboard-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmongUSSoundboard/Pods-AmongUSSoundboard-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmongUSSoundboard/Pods-AmongUSSoundboard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C2D0A0E38ECF72A4824EA33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmongUSSoundboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		845A3A13257BF2C000735EDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -569,20 +662,25 @@
 				845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */,
 				84530579257D1A5F00F0816E /* AmongInfoImage.swift in Sources */,
 				84530514257CE04A00F0816E /* SoundButtonTextModifier.swift in Sources */,
+				846DBDAD257D29460055AAE7 /* BannerVC.swift in Sources */,
 				84530584257D1B5A00F0816E /* PurchaseButton.swift in Sources */,
 				8453057D257D1AA000F0816E /* PurchaseTextTop.swift in Sources */,
 				84530504257CD64700F0816E /* CustomNavigationViewsStyle.swift in Sources */,
 				845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */,
 				845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */,
 				845304DB257C932100F0816E /* AppLogo.swift in Sources */,
+				846DBDB7257D2D8B0055AAE7 /* InAppStoreModel.swift in Sources */,
 				84530469257C7F0B00F0816E /* AmongSound.swift in Sources */,
+				846DBDB6257D2D8B0055AAE7 /* InAppPurchView.swift in Sources */,
 				8453058C257D1D1300F0816E /* PurchaseControlService.swift in Sources */,
+				846DBDB8257D2D8B0055AAE7 /* StoreApp.swift in Sources */,
 				845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */,
 				845304D4257C926800F0816E /* Colors.swift in Sources */,
 				845A3A1F257BF2C000735EDF /* MainView.swift in Sources */,
 				845A3A44257BF97800735EDF /* SoundsList.swift in Sources */,
 				8453054A257CEC3400F0816E /* ReviewService.swift in Sources */,
 				845304CF257C8C3E00F0816E /* SoundService.swift in Sources */,
+				846DBDB0257D29C10055AAE7 /* AdsIDs.swift in Sources */,
 				8453050C257CDCFC00F0816E /* MainButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -719,6 +817,7 @@
 		};
 		845A3A2C257BF2C100735EDF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BEF36584B0E042035DD13F0 /* Pods-AmongUSSoundboard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,6 +839,7 @@
 		};
 		845A3A2D257BF2C100735EDF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E80E16E2A8E29B027FF5CC8 /* Pods-AmongUSSoundboard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

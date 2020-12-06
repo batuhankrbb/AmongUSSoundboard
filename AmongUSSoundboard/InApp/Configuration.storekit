@@ -1,0 +1,34 @@
+{
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "D14476A8",
+      "localizations" : [
+        {
+          "description" : "Remove Ads",
+          "displayName" : "Remove Ads",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Reklam Kaldırma",
+          "displayName" : "Reklma Kaldır",
+          "locale" : "tr"
+        }
+      ],
+      "productID" : "ibrahimkarababa.AmongUSSoundboard.adblock",
+      "referenceName" : "Remove Adss",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
