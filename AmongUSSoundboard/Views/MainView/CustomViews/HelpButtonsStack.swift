@@ -9,7 +9,7 @@ import SwiftUI
 import StoreKit
 struct HelpButtonsStack: View {
     
-    
+    @Binding var purchaseClicked:Bool
     
     var body: some View {
         HStack(alignment: .bottom,spacing: 20){
@@ -33,7 +33,9 @@ struct HelpButtonsStack: View {
             .makeCustomRoundedButton(backgroundColor: AmongColors.green)
             
             
-            Button(action: {}, label: {
+            Button(action: {
+                purchaseClicked = true
+            }, label: {
                 Image("removeAdIcon")
                     .resizable()
                     .padding()
@@ -45,8 +47,8 @@ struct HelpButtonsStack: View {
     
 }
 
-struct HelpButtonsStack_Previews: PreviewProvider {
-    static var previews: some View {
-        HelpButtonsStack()
-    }
-}
+//struct HelpButtonsStack_Previews: PreviewProvider {
+//    static var previews: some View {
+//      HelpButtonsStack(purchaseClicked: Binding<Bool>)
+//    }
+//}

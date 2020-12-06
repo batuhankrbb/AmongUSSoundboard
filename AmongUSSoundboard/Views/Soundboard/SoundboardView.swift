@@ -27,7 +27,6 @@ struct SoundboardView: View {
                         ForEach(soundList){ sound in
                             SoundButtonCell(amongSound: sound)
                         }
-                       
                     }).listRowBackground(AmongColors.blue)
             }
         }

@@ -10,7 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @State var showSoundboard = false
-    
+    @State var showPurcase = false
     var body: some View {
         NavigationView{
             ZStack{
@@ -33,13 +33,16 @@ struct MainView: View {
                     
                     Spacer()
                     
-                    HelpButtonsStack()
+                    HelpButtonsStack(purchaseClicked: $showPurcase)
                         .padding()
                     
                     Spacer()
                 }
             }
         }
+        .sheet(isPresented: $showPurcase, content: {
+            PurchaseView()
+        })
         .accentColor(.white)
         .makeCustomNavigationStyle()
         

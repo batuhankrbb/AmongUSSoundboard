@@ -71,6 +71,14 @@
 		84530546257CEA7300F0816E /* Beverage.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8453053D257CEA7300F0816E /* Beverage.m4a */; };
 		84530547257CEA7300F0816E /* Astroid-Hit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8453053E257CEA7300F0816E /* Astroid-Hit.m4a */; };
 		8453054A257CEC3400F0816E /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530549257CEC3400F0816E /* ReviewService.swift */; };
+		84530568257D060100F0816E /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530567257D060100F0816E /* IAPManager.swift */; };
+		8453056E257D0E3D00F0816E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453056D257D0E3D00F0816E /* StoreKit.framework */; };
+		84530571257D112700F0816E /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530570257D112700F0816E /* PurchaseView.swift */; };
+		84530579257D1A5F00F0816E /* AmongInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530578257D1A5F00F0816E /* AmongInfoImage.swift */; };
+		8453057D257D1AA000F0816E /* PurchaseTextTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453057C257D1AA000F0816E /* PurchaseTextTop.swift */; };
+		84530581257D1B2E00F0816E /* PurchaseTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530580257D1B2E00F0816E /* PurchaseTextModifier.swift */; };
+		84530584257D1B5A00F0816E /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530583257D1B5A00F0816E /* PurchaseButton.swift */; };
+		8453058C257D1D1300F0816E /* PurchaseControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453058B257D1D1300F0816E /* PurchaseControlService.swift */; };
 		845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1A257BF2C000735EDF /* AppDelegate.swift */; };
 		845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1C257BF2C000735EDF /* SceneDelegate.swift */; };
 		845A3A1F257BF2C000735EDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1E257BF2C000735EDF /* MainView.swift */; };
@@ -145,6 +153,14 @@
 		8453053D257CEA7300F0816E /* Beverage.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Beverage.m4a; sourceTree = "<group>"; };
 		8453053E257CEA7300F0816E /* Astroid-Hit.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Astroid-Hit.m4a"; sourceTree = "<group>"; };
 		84530549257CEC3400F0816E /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		84530567257D060100F0816E /* IAPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
+		8453056D257D0E3D00F0816E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		84530570257D112700F0816E /* PurchaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseView.swift; sourceTree = "<group>"; };
+		84530578257D1A5F00F0816E /* AmongInfoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmongInfoImage.swift; sourceTree = "<group>"; };
+		8453057C257D1AA000F0816E /* PurchaseTextTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTextTop.swift; sourceTree = "<group>"; };
+		84530580257D1B2E00F0816E /* PurchaseTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTextModifier.swift; sourceTree = "<group>"; };
+		84530583257D1B5A00F0816E /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		8453058B257D1D1300F0816E /* PurchaseControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseControlService.swift; sourceTree = "<group>"; };
 		845A3A17257BF2C000735EDF /* AmongUSSoundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmongUSSoundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A3A1A257BF2C000735EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845A3A1C257BF2C000735EDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8453056E257D0E3D00F0816E /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +197,7 @@
 			children = (
 				845304CE257C8C3E00F0816E /* SoundService.swift */,
 				84530549257CEC3400F0816E /* ReviewService.swift */,
+				8453058B257D1D1300F0816E /* PurchaseControlService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +207,7 @@
 			children = (
 				845304DF257C974100F0816E /* ScreenSize.swift */,
 				8453050E257CDE1400F0816E /* Ext+View.swift */,
+				84530567257D060100F0816E /* IAPManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -215,6 +234,7 @@
 		84530511257CDE7500F0816E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				84530576257D1A4200F0816E /* Purchase */,
 				845A3A3C257BF3CC00735EDF /* MainView */,
 				845304F2257CAEA000F0816E /* Soundboard */,
 			);
@@ -239,11 +259,48 @@
 			path = "Modifiers And Styles";
 			sourceTree = "<group>";
 		};
+		8453056C257D0E3D00F0816E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8453056D257D0E3D00F0816E /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84530576257D1A4200F0816E /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				84530570257D112700F0816E /* PurchaseView.swift */,
+				84530577257D1A4A00F0816E /* CustomViews */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		84530577257D1A4A00F0816E /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8453057F257D1B1700F0816E /* StyleAndModifiers */,
+				84530578257D1A5F00F0816E /* AmongInfoImage.swift */,
+				8453057C257D1AA000F0816E /* PurchaseTextTop.swift */,
+				84530583257D1B5A00F0816E /* PurchaseButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8453057F257D1B1700F0816E /* StyleAndModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				84530580257D1B2E00F0816E /* PurchaseTextModifier.swift */,
+			);
+			path = StyleAndModifiers;
+			sourceTree = "<group>";
+		};
 		845A3A0E257BF2C000735EDF = {
 			isa = PBXGroup;
 			children = (
 				845A3A19257BF2C000735EDF /* AmongUSSoundboard */,
 				845A3A18257BF2C000735EDF /* Products */,
+				8453056C257D0E3D00F0816E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,8 +413,8 @@
 			isa = PBXGroup;
 			children = (
 				84530519257CE16A00F0816E /* ModifiersAndStyles */,
-				845304DA257C932100F0816E /* AppLogo.swift */,
 				845304EF257CA60200F0816E /* HelpButtonsStack.swift */,
+				845304DA257C932100F0816E /* AppLogo.swift */,
 				8453050B257CDCFC00F0816E /* MainButton.swift */,
 			);
 			path = CustomViews;
@@ -500,19 +557,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84530568257D060100F0816E /* IAPManager.swift in Sources */,
 				8453050F257CDE1400F0816E /* Ext+View.swift in Sources */,
+				84530581257D1B2E00F0816E /* PurchaseTextModifier.swift in Sources */,
 				84530521257CE1CB00F0816E /* StopNavigationButton.swift in Sources */,
 				845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */,
 				845304E0257C974100F0816E /* ScreenSize.swift in Sources */,
 				845304FD257CAF1500F0816E /* SoundButtonCell.swift in Sources */,
 				84530517257CE06500F0816E /* SoundButtonModifier.swift in Sources */,
+				84530571257D112700F0816E /* PurchaseView.swift in Sources */,
 				845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */,
+				84530579257D1A5F00F0816E /* AmongInfoImage.swift in Sources */,
 				84530514257CE04A00F0816E /* SoundButtonTextModifier.swift in Sources */,
+				84530584257D1B5A00F0816E /* PurchaseButton.swift in Sources */,
+				8453057D257D1AA000F0816E /* PurchaseTextTop.swift in Sources */,
 				84530504257CD64700F0816E /* CustomNavigationViewsStyle.swift in Sources */,
 				845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */,
 				845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */,
 				845304DB257C932100F0816E /* AppLogo.swift in Sources */,
 				84530469257C7F0B00F0816E /* AmongSound.swift in Sources */,
+				8453058C257D1D1300F0816E /* PurchaseControlService.swift in Sources */,
 				845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */,
 				845304D4257C926800F0816E /* Colors.swift in Sources */,
 				845A3A1F257BF2C000735EDF /* MainView.swift in Sources */,
