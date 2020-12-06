@@ -9,10 +9,7 @@ import SwiftUI
 
 struct AppLogo: View {
     var body: some View {
-        
-       
             ZStack{
-               
                 Circle()
                     .fill(AmongColors.red)
                     
@@ -24,8 +21,7 @@ struct AppLogo: View {
                         .frame(width: ScreenSize.width * 0.3, height: ScreenSize.width * 0.3, alignment: .center)
             
             }.frame(width: ScreenSize.width * 0.4, height: ScreenSize.width * 0.4, alignment: .center)
-            .shadow(radius: 4)
-        
+            .shadow(radius: 6)
         
     }
 }

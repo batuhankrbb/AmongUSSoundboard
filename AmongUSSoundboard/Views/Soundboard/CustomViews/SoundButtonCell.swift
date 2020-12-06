@@ -23,20 +23,16 @@ struct SoundButtonCell: View {
                     .aspectRatio(contentMode: .fit)
                     
                 AmongColors.black.frame(height: 50)
+                    
                 .overlay(
                     Text(amongSound.name)
                         .bold()
-                        .padding(.horizontal,4)
-                        .padding(.vertical,1)
-                        .multilineTextAlignment(.center)
-                        .foregroundColor(.white).font(.largeTitle).minimumScaleFactor(0.05)
+                        .soundButtonTextModify()
                 )
             }
             
-        }.frame(width: ScreenSize.width * 0.28, height: ScreenSize.width * 0.28, alignment: .center)
-        .padding(.horizontal,12)
-        .cornerRadius(20)
-        .contentShape(Rectangle())
+        }
+        .soundButtonModify()
         .onTapGesture {
             SoundService.shared.playSound(sound: amongSound.soundURL)
         }
@@ -50,3 +46,8 @@ struct SoundButtonCell_Previews: PreviewProvider {
         SoundButtonCell(amongSound: amongSound)
     }
 }
+
+
+
+
+

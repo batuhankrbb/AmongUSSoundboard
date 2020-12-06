@@ -15,8 +15,8 @@ struct SoundboardView: View {
     
     init() {
         UITableView.appearance().backgroundColor = .clear
-        
     }
+    
     var body: some View {
         
         ZStack {
@@ -30,16 +30,9 @@ struct SoundboardView: View {
                        
                     }).listRowBackground(AmongColors.blue)
             }
-           
         }
-        .navigationBarItems(trailing: Button(action: {
-            SoundService.shared.stopSound()
-        }, label: {
-            Image(systemName: "stop.fill").font(.system(size: 30))
-        }).foregroundColor(.white))
-        
-        
-        
+        .navigationBarItems(trailing: StopNavigationButton(action: { SoundService.shared.stopSound()
+        }))
         
     }
 }

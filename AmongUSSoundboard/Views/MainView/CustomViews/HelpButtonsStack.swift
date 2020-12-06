@@ -9,22 +9,22 @@ import SwiftUI
 
 struct HelpButtonsStack: View {
     var body: some View {
+        
         HStack(alignment: .bottom,spacing: 20){
-            
             Button(action: {}, label: {
                 Image("shareIcon")
                     .resizable()
                     .padding()
             })
             .frame(width: 90, height: 90, alignment: .center)
-            .buttonStyle(CustomRoundedButtonStyle(backgroundColor: AmongColors.blue))
+            .makeCustomRoundedButton(backgroundColor: AmongColors.blue)
             
             Button(action: {}, label: {
                 Image(systemName: "star.fill")
                     .font(.system(size: 80))
                     .padding()
             })
-            .buttonStyle(CustomRoundedButtonStyle(backgroundColor: AmongColors.green))
+            .makeCustomRoundedButton(backgroundColor: AmongColors.green)
             
             
             Button(action: {}, label: {
@@ -33,8 +33,9 @@ struct HelpButtonsStack: View {
                     .padding()
             })
             .frame(width: 90, height: 90, alignment: .center)
-            .buttonStyle(CustomRoundedButtonStyle(backgroundColor: AmongColors.purple))
+            .makeCustomRoundedButton(backgroundColor: AmongColors.purple)
         }
+        
     }
 }
 

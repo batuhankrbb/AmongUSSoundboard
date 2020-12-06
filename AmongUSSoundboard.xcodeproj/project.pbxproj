@@ -65,6 +65,11 @@
 		845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304F3257CAEC300F0816E /* SoundboardView.swift */; };
 		845304FD257CAF1500F0816E /* SoundButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304FC257CAF1500F0816E /* SoundButtonCell.swift */; };
 		84530504257CD64700F0816E /* CustomNavigationViewsStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530503257CD64700F0816E /* CustomNavigationViewsStyle.swift */; };
+		8453050C257CDCFC00F0816E /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453050B257CDCFC00F0816E /* MainButton.swift */; };
+		8453050F257CDE1400F0816E /* Ext+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453050E257CDE1400F0816E /* Ext+View.swift */; };
+		84530514257CE04A00F0816E /* SoundButtonTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530513257CE04A00F0816E /* SoundButtonTextModifier.swift */; };
+		84530517257CE06500F0816E /* SoundButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530516257CE06500F0816E /* SoundButtonModifier.swift */; };
+		84530521257CE1CB00F0816E /* StopNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530520257CE1CB00F0816E /* StopNavigationButton.swift */; };
 		845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1A257BF2C000735EDF /* AppDelegate.swift */; };
 		845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1C257BF2C000735EDF /* SceneDelegate.swift */; };
 		845A3A1F257BF2C000735EDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1E257BF2C000735EDF /* MainView.swift */; };
@@ -133,6 +138,11 @@
 		845304F3257CAEC300F0816E /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
 		845304FC257CAF1500F0816E /* SoundButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonCell.swift; sourceTree = "<group>"; };
 		84530503257CD64700F0816E /* CustomNavigationViewsStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationViewsStyle.swift; sourceTree = "<group>"; };
+		8453050B257CDCFC00F0816E /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		8453050E257CDE1400F0816E /* Ext+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ext+View.swift"; sourceTree = "<group>"; };
+		84530513257CE04A00F0816E /* SoundButtonTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonTextModifier.swift; sourceTree = "<group>"; };
+		84530516257CE06500F0816E /* SoundButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundButtonModifier.swift; sourceTree = "<group>"; };
+		84530520257CE1CB00F0816E /* StopNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopNavigationButton.swift; sourceTree = "<group>"; };
 		845A3A17257BF2C000735EDF /* AmongUSSoundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmongUSSoundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A3A1A257BF2C000735EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845A3A1C257BF2C000735EDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -175,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				845304DF257C974100F0816E /* ScreenSize.swift */,
+				8453050E257CDE1400F0816E /* Ext+View.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,9 +202,38 @@
 		845304FB257CAF0100F0816E /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				8453051B257CE19400F0816E /* Modifiers And Styles */,
 				845304FC257CAF1500F0816E /* SoundButtonCell.swift */,
+				84530520257CE1CB00F0816E /* StopNavigationButton.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		84530511257CDE7500F0816E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845A3A3C257BF3CC00735EDF /* MainView */,
+				845304F2257CAEA000F0816E /* Soundboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84530519257CE16A00F0816E /* ModifiersAndStyles */ = {
+			isa = PBXGroup;
+			children = (
+				84530503257CD64700F0816E /* CustomNavigationViewsStyle.swift */,
+				845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */,
+			);
+			path = ModifiersAndStyles;
+			sourceTree = "<group>";
+		};
+		8453051B257CE19400F0816E /* Modifiers And Styles */ = {
+			isa = PBXGroup;
+			children = (
+				84530516257CE06500F0816E /* SoundButtonModifier.swift */,
+				84530513257CE04A00F0816E /* SoundButtonTextModifier.swift */,
+			);
+			path = "Modifiers And Styles";
 			sourceTree = "<group>";
 		};
 		845A3A0E257BF2C000735EDF = {
@@ -215,14 +255,13 @@
 		845A3A19257BF2C000735EDF /* AmongUSSoundboard */ = {
 			isa = PBXGroup;
 			children = (
+				845A3A3E257BF3E900735EDF /* Core */,
 				845304DE257C973100F0816E /* Utils */,
 				845304CD257C8C3100F0816E /* Services */,
 				84530467257C7EFE00F0816E /* Model */,
 				845A3A42257BF96300735EDF /* Data */,
 				845A3A38257BF39100735EDF /* Resources */,
-				845304F2257CAEA000F0816E /* Soundboard */,
-				845A3A3C257BF3CC00735EDF /* MainView */,
-				845A3A3E257BF3E900735EDF /* Core */,
+				84530511257CDE7500F0816E /* Views */,
 				845A3A20257BF2C100735EDF /* Assets.xcassets */,
 				845A3A28257BF2C100735EDF /* Info.plist */,
 				845A3A22257BF2C100735EDF /* Preview Content */,
@@ -313,10 +352,10 @@
 		845A3A3D257BF3D200735EDF /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				84530519257CE16A00F0816E /* ModifiersAndStyles */,
 				845304DA257C932100F0816E /* AppLogo.swift */,
-				845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */,
 				845304EF257CA60200F0816E /* HelpButtonsStack.swift */,
-				84530503257CD64700F0816E /* CustomNavigationViewsStyle.swift */,
+				8453050B257CDCFC00F0816E /* MainButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -458,10 +497,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8453050F257CDE1400F0816E /* Ext+View.swift in Sources */,
+				84530521257CE1CB00F0816E /* StopNavigationButton.swift in Sources */,
 				845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */,
 				845304E0257C974100F0816E /* ScreenSize.swift in Sources */,
 				845304FD257CAF1500F0816E /* SoundButtonCell.swift in Sources */,
+				84530517257CE06500F0816E /* SoundButtonModifier.swift in Sources */,
 				845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */,
+				84530514257CE04A00F0816E /* SoundButtonTextModifier.swift in Sources */,
 				84530504257CD64700F0816E /* CustomNavigationViewsStyle.swift in Sources */,
 				845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */,
 				845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */,
@@ -472,6 +515,7 @@
 				845A3A1F257BF2C000735EDF /* MainView.swift in Sources */,
 				845A3A44257BF97800735EDF /* SoundsList.swift in Sources */,
 				845304CF257C8C3E00F0816E /* SoundService.swift in Sources */,
+				8453050C257CDCFC00F0816E /* MainButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

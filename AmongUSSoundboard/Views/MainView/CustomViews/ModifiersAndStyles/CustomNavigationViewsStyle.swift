@@ -13,6 +13,5 @@ struct CustomNavigationViewStyle:ViewModifier{
             .navigationViewStyle(StackNavigationViewStyle())
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarBackButtonHidden(true)
     }
 }
