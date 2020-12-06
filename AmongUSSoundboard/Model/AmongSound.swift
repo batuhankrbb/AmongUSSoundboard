@@ -11,7 +11,4 @@ struct AmongSound{
     var name:String
     var imgName:String
     var soundURL:URL
-    
-    
-    
 }

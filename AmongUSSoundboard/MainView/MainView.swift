@@ -8,9 +8,47 @@
 import SwiftUI
 
 struct MainView: View {
+    
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+            AmongColors.orange.edgesIgnoringSafeArea(.all)
+            
+            
+            
+            VStack {
+            
+                    HStack{
+                        Spacer()
+                        AppLogo()
+                        Spacer()
+                    }.padding()
+                
+                Spacer()
+                    
+                Button(action: {}, label: {
+                    Text("PLAY SOUNDBOARD")
+                        .bold()
+                        .font(.title)
+                        .padding()
+                        .frame(width: ScreenSize.width * 0.9, height: 100, alignment: .center)
+                })
+                .padding(20)
+                .buttonStyle(CustomRoundedButtonStyle(backgroundColor: Color.red))
+                
+                Spacer()
+                
+                
+                
+                HelpButtonsStack()
+                    .padding()
+                
+                Spacer()
+            }
+            
+            
+           
+        }
     }
 }
 

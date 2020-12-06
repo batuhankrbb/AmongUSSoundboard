@@ -56,6 +56,13 @@
 		845304C8257C813300F0816E /* Door-Close-Sabotage.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84530498257C813300F0816E /* Door-Close-Sabotage.mp3 */; };
 		845304C9257C813300F0816E /* Reactor-Meldown.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84530499257C813300F0816E /* Reactor-Meldown.mp3 */; };
 		845304CA257C813300F0816E /* Task-Complete.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8453049A257C813300F0816E /* Task-Complete.mp3 */; };
+		845304CF257C8C3E00F0816E /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304CE257C8C3E00F0816E /* SoundService.swift */; };
+		845304D4257C926800F0816E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304D3257C926800F0816E /* Colors.swift */; };
+		845304DB257C932100F0816E /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304DA257C932100F0816E /* AppLogo.swift */; };
+		845304E0257C974100F0816E /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304DF257C974100F0816E /* ScreenSize.swift */; };
+		845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */; };
+		845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304EF257CA60200F0816E /* HelpButtonsStack.swift */; };
+		845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304F3257CAEC300F0816E /* SoundboardView.swift */; };
 		845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1A257BF2C000735EDF /* AppDelegate.swift */; };
 		845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1C257BF2C000735EDF /* SceneDelegate.swift */; };
 		845A3A1F257BF2C000735EDF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A1E257BF2C000735EDF /* MainView.swift */; };
@@ -115,6 +122,13 @@
 		84530498257C813300F0816E /* Door-Close-Sabotage.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Door-Close-Sabotage.mp3"; sourceTree = "<group>"; };
 		84530499257C813300F0816E /* Reactor-Meldown.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Reactor-Meldown.mp3"; sourceTree = "<group>"; };
 		8453049A257C813300F0816E /* Task-Complete.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Task-Complete.mp3"; sourceTree = "<group>"; };
+		845304CE257C8C3E00F0816E /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
+		845304D3257C926800F0816E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		845304DA257C932100F0816E /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
+		845304DF257C974100F0816E /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedButtonStyle.swift; sourceTree = "<group>"; };
+		845304EF257CA60200F0816E /* HelpButtonsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButtonsStack.swift; sourceTree = "<group>"; };
+		845304F3257CAEC300F0816E /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
 		845A3A17257BF2C000735EDF /* AmongUSSoundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmongUSSoundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845A3A1A257BF2C000735EDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		845A3A1C257BF2C000735EDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +159,30 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		845304CD257C8C3100F0816E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				845304CE257C8C3E00F0816E /* SoundService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		845304DE257C973100F0816E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				845304DF257C974100F0816E /* ScreenSize.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		845304F2257CAEA000F0816E /* Soundboard */ = {
+			isa = PBXGroup;
+			children = (
+				845304F3257CAEC300F0816E /* SoundboardView.swift */,
+			);
+			path = Soundboard;
+			sourceTree = "<group>";
+		};
 		845A3A0E257BF2C000735EDF = {
 			isa = PBXGroup;
 			children = (
@@ -164,9 +202,12 @@
 		845A3A19257BF2C000735EDF /* AmongUSSoundboard */ = {
 			isa = PBXGroup;
 			children = (
+				845304DE257C973100F0816E /* Utils */,
+				845304CD257C8C3100F0816E /* Services */,
 				84530467257C7EFE00F0816E /* Model */,
 				845A3A42257BF96300735EDF /* Data */,
 				845A3A38257BF39100735EDF /* Resources */,
+				845304F2257CAEA000F0816E /* Soundboard */,
 				845A3A3C257BF3CC00735EDF /* MainView */,
 				845A3A3E257BF3E900735EDF /* Core */,
 				845A3A20257BF2C100735EDF /* Assets.xcassets */,
@@ -259,6 +300,9 @@
 		845A3A3D257BF3D200735EDF /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				845304DA257C932100F0816E /* AppLogo.swift */,
+				845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */,
+				845304EF257CA60200F0816E /* HelpButtonsStack.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -277,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				845A3A43257BF97800735EDF /* SoundsList.swift */,
+				845304D3257C926800F0816E /* Colors.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -400,10 +445,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */,
+				845304E0257C974100F0816E /* ScreenSize.swift in Sources */,
+				845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */,
+				845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */,
 				845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */,
+				845304DB257C932100F0816E /* AppLogo.swift in Sources */,
 				84530469257C7F0B00F0816E /* AmongSound.swift in Sources */,
+				845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */,
+				845304D4257C926800F0816E /* Colors.swift in Sources */,
 				845A3A1F257BF2C000735EDF /* MainView.swift in Sources */,
 				845A3A44257BF97800735EDF /* SoundsList.swift in Sources */,
+				845304CF257C8C3E00F0816E /* SoundService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
