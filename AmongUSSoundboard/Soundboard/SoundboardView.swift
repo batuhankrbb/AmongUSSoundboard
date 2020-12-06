@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct SoundboardView: View {
+    
+    var gridItems:[GridItem] = [GridItem(.flexible()),
+                                GridItem(.flexible()),
+                                GridItem(.flexible())]
+    
+    init() {
+        UITableView.appearance().backgroundColor = .clear
+        
+    }
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        ZStack {
+            AmongColors.blue.edgesIgnoringSafeArea(.all)
+            List {
+                    LazyVGrid(columns: gridItems, alignment: .center, spacing: 30, content: {
+                        
+                        ForEach(soundList){ sound in
+                            SoundButtonCell(amongSound: sound)
+                        }
+                       
+                    }).listRowBackground(AmongColors.blue)
+            }
+           
+        }
+        .navigationBarItems(trailing: Button(action: {
+            SoundService.shared.stopSound()
+        }, label: {
+            Image(systemName: "stop.fill").font(.system(size: 30))
+        }).foregroundColor(.white))
+        
+        
+        
+        
     }
 }
 

@@ -9,46 +9,47 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State var showSoundboard = false
     
     var body: some View {
-        ZStack{
-            AmongColors.orange.edgesIgnoringSafeArea(.all)
-            
-            
-            
-            VStack {
-            
-                    HStack{
-                        Spacer()
-                        AppLogo()
-                        Spacer()
-                    }.padding()
+        NavigationView{
+            ZStack{
+                AmongColors.orange.edgesIgnoringSafeArea(.all)
                 
-                Spacer()
+                VStack {
+                        HStack{
+                            Spacer()
+                            AppLogo()
+                            Spacer()
+                        }.padding()
+                    Spacer()
+                        
+                    NavigationLink("", destination: SoundboardView(), isActive: $showSoundboard)
+                        
+                    Button(action: {
+                        showSoundboard = true
+                    }, label: {
+                        Text("PLAY SOUNDBOARD")
+                            .bold()
+                            .font(.title)
+                            .padding()
+                            .frame(width: ScreenSize.width * 0.9, height: 100, alignment: .center)
+                    })
+                    .padding(20)
+                    .buttonStyle(CustomRoundedButtonStyle(backgroundColor: Color.red))
                     
-                Button(action: {}, label: {
-                    Text("PLAY SOUNDBOARD")
-                        .bold()
-                        .font(.title)
+                    
+                    Spacer()
+                    
+                    HelpButtonsStack()
                         .padding()
-                        .frame(width: ScreenSize.width * 0.9, height: 100, alignment: .center)
-                })
-                .padding(20)
-                .buttonStyle(CustomRoundedButtonStyle(backgroundColor: Color.red))
-                
-                Spacer()
-                
-                
-                
-                HelpButtonsStack()
-                    .padding()
-                
-                Spacer()
-            }
-            
-            
-           
-        }
+                    
+                    Spacer()
+                }
+            }.accentColor(.white)
+        }.modifier(CustomNavigationViewStyle())
+        .accentColor(.white)
+        
     }
 }
 

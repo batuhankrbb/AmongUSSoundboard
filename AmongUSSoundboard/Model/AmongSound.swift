@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct AmongSound{
+struct AmongSound:Identifiable{
+    var id = UUID()
     var name:String
     var imgName:String
     var soundURL:URL

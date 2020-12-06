@@ -14,4 +14,5 @@ struct AmongColors{
     static let orange = Color("Orange")
     static let purple = Color("Purple")
     static let green = Color("Green")
+    static let black = Color("Black")
 }
