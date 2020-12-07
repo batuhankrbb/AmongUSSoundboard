@@ -8,9 +8,39 @@
 import Foundation
 
 enum AdsIds{
-    static let mainBannerID = "ca-app-pub-3940256099942544/2934735716"
-    static let playSoundboardClickInterstetialID = "ca-app-pub-3940256099942544/4411468910"
-    static let removeAdsBannerID = "ca-app-pub-3940256099942544/2934735716"
-    static let soundClickInterstetialID = "ca-app-pub-3940256099942544/4411468910"
-    static let stopClickedID = "ca-app-pub-3940256099942544/4411468910"
+    static var mainBannerID:String{
+        if PurchaseControlService.shared.isPurchased == true{
+            return ""
+        }else{
+            return "ca-app-pub-3108242646730560/3602888843"
+        }
+    }
+    static var playSoundboardClickInterstetialID:String{
+        if PurchaseControlService.shared.isPurchased == true{
+            return ""
+        }else{
+            return "ca-app-pub-3108242646730560/6646681127"
+        }
+    }
+    static var removeAdsBannerID:String{
+        if PurchaseControlService.shared.isPurchased == true{
+            return ""
+        }else{
+            return "ca-app-pub-3108242646730560/5782329625"
+        }
+    }
+    static var soundClickInterstetialID:String{
+        if PurchaseControlService.shared.isPurchased == true{
+            return ""
+        }else{
+            return "ca-app-pub-3108242646730560/7350562162"
+        }
+    }
+    static var stopClickedID:String{
+        if PurchaseControlService.shared.isPurchased == true{
+            return ""
+        }else{
+            return "ca-app-pub-3108242646730560/3323703156"
+        }
+    }
 }

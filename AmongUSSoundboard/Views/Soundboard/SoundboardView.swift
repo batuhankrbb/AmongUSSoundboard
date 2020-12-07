@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct SoundboardView: View {
     
     var gridItems:[GridItem] = [GridItem(.flexible()),
@@ -35,7 +36,9 @@ struct SoundboardView: View {
             }
         }
         .navigationBarItems(trailing: StopNavigationButton(action: { SoundService.shared.stopSound()
-            interstitialStop.showAd()
+            if PurchaseControlService.shared.isPurchased == false{
+                interstitialStop.showAd()
+            }
         }))
         
     }

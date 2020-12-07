@@ -15,7 +15,9 @@ struct AmongInfoImage: View {
                 .frame(width: ScreenSize.width * 0.5, height: ScreenSize.width * 0.5, alignment: .center)
                 .aspectRatio(contentMode: .fit)
             Text("Unlimited Access").font(.largeTitle)
-            Text("Get access to all our features").font(.title)
+            Text("Get access to all our features & Remove All Ads").font(.title)
+                .lineLimit(1).minimumScaleFactor(0.5)
+                .padding(.horizontal)
         }
         
     }

@@ -12,7 +12,8 @@ class PurchaseControlService{
     private init(){}
     
     private let userDefaults = UserDefaults.standard
-    let shared = PurchaseControlService()
+    
+    static let shared = PurchaseControlService()
     
     var isPurchased:Bool{
         return userDefaults.bool(forKey: "isPurchased")

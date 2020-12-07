@@ -42,7 +42,9 @@ struct SoundButtonCell: View {
         .soundButtonModify()
         .onTapGesture {
             SoundService.shared.playSound(sound: amongSound.soundURL)
-            interstitialSound.showAd()
+            if PurchaseControlService.shared.isPurchased == false{
+                interstitialSound.showAd()
+            }
         }        
     }
 }

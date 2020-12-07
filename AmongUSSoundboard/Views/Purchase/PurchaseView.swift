@@ -9,13 +9,9 @@ import SwiftUI
 
 struct PurchaseView: View {
     
-    
-
-    @State var showPurchase = false
-    
     @State var isRestored = false
-    
 
+   
     
     var body: some View {
         VStack{
@@ -24,14 +20,19 @@ struct PurchaseView: View {
             AmongInfoImage()
             
             Spacer()
+
+            PurchaseButton(action: {
+                if let myProduct = IAPManager.shared.myProduct{
+                    if PurchaseControlService.shared.isPurchased == false{
+                        IAPManager.shared.purchaseV5(product: myProduct)
+                    }
+                }
+                }, buttonText: PurchaseControlService.shared.isPurchased ? "YOU ARE PREMIUM!" : "Get The Premium Version", backgroundColor: AmongColors.green)
+                .padding()
+            
             
             PurchaseButton(action: {
-                self.showPurchase.toggle()
-            }, buttonText: "Get The Premium With No Ads", backgroundColor: AmongColors.green)
-            .padding()
-            
-            PurchaseButton(action: {
-                InAppManager.shared.restorePurchasesV5()
+                IAPManager.shared.restorePurchasesV5()
                 isRestored.toggle()
             }, buttonText: "Restore Purchase", backgroundColor: AmongColors.blue)
             
@@ -39,7 +40,9 @@ struct PurchaseView: View {
             Spacer()
             HStack{
                 Spacer()
-                BannerVC(bannerID: AdsIds.removeAdsBannerID).frame(width: 320, height: 50, alignment: .center)
+                if PurchaseControlService.shared.isPurchased == false{
+                    BannerVC(bannerID: AdsIds.removeAdsBannerID).frame(width: 320, height: 50, alignment: .center)
+                }
                 Spacer()
             }
         }
@@ -54,5 +57,7 @@ struct PurchaseView_Previews: PreviewProvider {
         PurchaseView()
     }
 }
+
+
 
 

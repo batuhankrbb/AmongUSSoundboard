@@ -35,7 +35,9 @@ struct MainView: View {
                     NavigationLink("", destination: SoundboardView(), isActive: $showSoundboard)
                     
                     MainButton(buttonText: "PLAY SOUNDBOARD", action: {
-                        interstitial.showAd()
+                        if PurchaseControlService.shared.isPurchased == false{
+                            interstitial.showAd()
+                        }
                         showSoundboard = true
                     }, backgroundColor: AmongColors.red)
                     
@@ -48,12 +50,16 @@ struct MainView: View {
                     
                     HStack{
                         Spacer()
-                        BannerVC(bannerID: AdsIds.mainBannerID).frame(width: 320, height: 50, alignment: .center)
+                        if PurchaseControlService.shared.isPurchased == false{
+                            BannerVC(bannerID: AdsIds.mainBannerID).frame(width: 320, height: 50, alignment: .center)
+                        }
                         Spacer()
                     }
                     
                 }
-            }
+            }.onAppear(perform: {
+                IAPManager.shared.getProductsV5()
+            })
         }
         .sheet(isPresented: $showPurcase, content: {
             PurchaseView()
