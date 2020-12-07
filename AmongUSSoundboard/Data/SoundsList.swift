@@ -8,7 +8,7 @@
 import Foundation
 
 enum AmongSounds{
-    static let allVoteTyping = AmongSound(name: "All Vote Typing", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "All-Vote-Typing", ofType: "mp3")!))
+    static let allVoteTyping = AmongSound(name: "All Vote Typing", imgName: "voteImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "All-Vote-Typing", ofType: "mp3")!))
     
     static let astroidHit = AmongSound(name: "Astroid Hit", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Astroid-Hit", ofType: "m4a")!))
     
@@ -16,49 +16,49 @@ enum AmongSounds{
     
     static let beverage = AmongSound(name: "Beverage", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Beverage", ofType: "m4a")!))
     
-    static let bodyFound = AmongSound(name: "Body Found", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Body-Found", ofType: "mp3")!))
+    static let bodyFound = AmongSound(name: "Body Found", imgName: "bodyFoundImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Body-Found", ofType: "mp3")!))
     
     static let buyingBeverage = AmongSound(name: "Buying Beverage", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Buying-Beverage", ofType: "mp3")!))
     
     static let commsRadio = AmongSound(name: "Comms Radio", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Comms-Radio", ofType: "m4a")!))
     
-    static let doorCloseSabotage = AmongSound(name: "Door Close Sabotage", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Door-Close-Sabotage", ofType: "mp3")!))
+    static let doorCloseSabotage = AmongSound(name: "Door Close Sabotage", imgName: "SabotageImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Door-Close-Sabotage", ofType: "mp3")!))
     
     static let crewWin = AmongSound(name: "Crew Win", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Crew-Win", ofType: "mp3")!))
     
-    static let crisis = AmongSound(name: "Crisis", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Crisis", ofType: "mp3")!))
+    static let crisis = AmongSound(name: "Crisis", imgName: "SabotageImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Crisis", ofType: "mp3")!))
     
     static let death1 = AmongSound(name: "Death -1", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-1", ofType: "mp3")!))
     
-    static let death2 = AmongSound(name: "Death -2 Stabbing", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-2-Stabbing", ofType: "mp3")!))
+    static let death2 = AmongSound(name: "Death -2 Stabbing", imgName: "knifeKillImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-2-Stabbing", ofType: "mp3")!))
     
-    static let death3 = AmongSound(name: "Death -3 Gun", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-3-Gun", ofType: "mp3")!))
+    static let death3 = AmongSound(name: "Death -3 Gun", imgName: "gunKillImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-3-Gun", ofType: "mp3")!))
     
     static let death4 = AmongSound(name: "Death -4 Neck", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Death-4-Neck", ofType: "mp3")!))
     
     static let decontaminationGas = AmongSound(name: "Decontamination Gas", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Decontamination-Gas", ofType: "m4a")!))
     
-    static let doorOpenSabotage = AmongSound(name: "Door Open Sabotage", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Door-Open-Sabotage", ofType: "mp3")!))
+    static let doorOpenSabotage = AmongSound(name: "Door Open Sabotage", imgName: "SabotageImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Door-Open-Sabotage", ofType: "mp3")!))
     
-    static let ejectLava = AmongSound(name: "Eject Lava", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Eject-Lava", ofType: "mp3")!))
+    static let ejectLava = AmongSound(name: "Eject Lava", imgName: "voteImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Eject-Lava", ofType: "mp3")!))
     
     static let electricZappingSnow = AmongSound(name: "Electric Zapping Snow", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Electric-Zapping-Snow", ofType: "mp3")!))
     
-    static let emergencyMeeting = AmongSound(name: "Emergency Meeting", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Emergency-Meeting", ofType: "mp3")!))
+    static let emergencyMeeting = AmongSound(name: "Emergency Meeting", imgName: "emergencyMeetingImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Emergency-Meeting", ofType: "mp3")!))
     
     static let engineZapping = AmongSound(name: "Engine Zapping", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Engine-Zapping", ofType: "mp3")!))
     
     static let fixingCommunication = AmongSound(name: "Fixing Communication", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Fixing-Communication", ofType: "mp3")!))
     
-    static let glassDoorSlideClose = AmongSound(name: "Glass Door Slide Close", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Glass-Door-Slide-Close", ofType: "mp3")!))
+    static let glassDoorSlideClose = AmongSound(name: "Glass Door Slide Close", imgName: "SabotageImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Glass-Door-Slide-Close", ofType: "mp3")!))
     
-    static let impostorWin = AmongSound(name: "Impostor Win", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Impostor-Win", ofType: "mp3")!))
+    static let impostorWin = AmongSound(name: "Impostor Win", imgName: "impostorImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Impostor-Win", ofType: "mp3")!))
     
     static let joiningLobby = AmongSound(name: "Joining Lobby", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Joining-Lobby", ofType: "mp3")!))
     
-    static let kill = AmongSound(name: "Kill", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Kill", ofType: "mp3")!))
+    static let kill = AmongSound(name: "Kill", imgName: "killImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Kill", ofType: "mp3")!))
     
-    static let lightSwitch = AmongSound(name: "Light Switch", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Light-Switch", ofType: "mp3")!))
+    static let lightSwitch = AmongSound(name: "Light Switch", imgName: "SabotageImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Light-Switch", ofType: "mp3")!))
     
     static let mainTheme = AmongSound(name: "Main Theme", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Main-Theme", ofType: "mp3")!))
     
@@ -78,9 +78,9 @@ enum AmongSounds{
     
     static let taskComplete = AmongSound(name: "Task Complete", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Task-Complete", ofType: "mp3")!))
     
-    static let ventMove = AmongSound(name: "Vent Move", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Vent-Move", ofType: "mp3")!))
+    static let ventMove = AmongSound(name: "Vent Move", imgName: "ventImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Vent-Move", ofType: "mp3")!))
     
-    static let ventOut = AmongSound(name: "Vent Out", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Vent-Out", ofType: "mp3")!))
+    static let ventOut = AmongSound(name: "Vent Out", imgName: "ventImg", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Vent-Out", ofType: "mp3")!))
     
     static let voteLockIn = AmongSound(name: "Vote Lock In", imgName: "among", soundURL: URL(fileURLWithPath: Bundle.main.path(forResource: "Vote-Lock-In", ofType: "mp3")!))
     

@@ -11,6 +11,13 @@ struct SoundButtonCell: View {
     
     var amongSound:AmongSound
     
+    var interstitialSound:Interstitial
+    
+    init(amongSound:AmongSound) {
+        self.amongSound = amongSound
+        interstitialSound = Interstitial(interstitialID: AdsIds.soundClickInterstetialID)
+    }
+    
     var body: some View {
         ZStack{
             AmongColors.orange
@@ -35,8 +42,8 @@ struct SoundButtonCell: View {
         .soundButtonModify()
         .onTapGesture {
             SoundService.shared.playSound(sound: amongSound.soundURL)
-        }
-        
+            interstitialSound.showAd()
+        }        
     }
 }
 

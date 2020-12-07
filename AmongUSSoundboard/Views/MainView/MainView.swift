@@ -11,23 +11,31 @@ struct MainView: View {
     
     @State var showSoundboard = false
     @State var showPurcase = false
+    
+    var interstitial:Interstitial
+    
+    init(){
+        self.interstitial = Interstitial(interstitialID: AdsIds.playSoundboardClickInterstetialID)
+    }
+    
     var body: some View {
         NavigationView{
             ZStack{
                 AmongColors.orange.edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                        HStack{
-                            Spacer()
-                            AppLogo()
-                            Spacer()
-                        }.padding()
+                    HStack{
+                        Spacer()
+                        AppLogo()
+                        Spacer()
+                    }.padding()
                     
                     Spacer()
-                        
+                    
                     NavigationLink("", destination: SoundboardView(), isActive: $showSoundboard)
-                        
+                    
                     MainButton(buttonText: "PLAY SOUNDBOARD", action: {
+                        interstitial.showAd()
                         showSoundboard = true
                     }, backgroundColor: AmongColors.red)
                     
@@ -38,7 +46,11 @@ struct MainView: View {
                     
                     Spacer()
                     
-                    
+                    HStack{
+                        Spacer()
+                        BannerVC(bannerID: AdsIds.mainBannerID).frame(width: 320, height: 50, alignment: .center)
+                        Spacer()
+                    }
                     
                 }
             }

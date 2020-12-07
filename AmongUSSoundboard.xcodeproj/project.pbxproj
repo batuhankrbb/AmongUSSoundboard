@@ -51,7 +51,6 @@
 		845304CF257C8C3E00F0816E /* SoundService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304CE257C8C3E00F0816E /* SoundService.swift */; };
 		845304D4257C926800F0816E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304D3257C926800F0816E /* Colors.swift */; };
 		845304DB257C932100F0816E /* AppLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304DA257C932100F0816E /* AppLogo.swift */; };
-		845304E0257C974100F0816E /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304DF257C974100F0816E /* ScreenSize.swift */; };
 		845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */; };
 		845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304EF257CA60200F0816E /* HelpButtonsStack.swift */; };
 		845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845304F3257CAEC300F0816E /* SoundboardView.swift */; };
@@ -73,7 +72,6 @@
 		84530547257CEA7300F0816E /* Astroid-Hit.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 8453053E257CEA7300F0816E /* Astroid-Hit.m4a */; };
 		8453054A257CEC3400F0816E /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530549257CEC3400F0816E /* ReviewService.swift */; };
 		84530568257D060100F0816E /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530567257D060100F0816E /* IAPManager.swift */; };
-		8453056E257D0E3D00F0816E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453056D257D0E3D00F0816E /* StoreKit.framework */; };
 		84530571257D112700F0816E /* PurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530570257D112700F0816E /* PurchaseView.swift */; };
 		84530579257D1A5F00F0816E /* AmongInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84530578257D1A5F00F0816E /* AmongInfoImage.swift */; };
 		8453057D257D1AA000F0816E /* PurchaseTextTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8453057C257D1AA000F0816E /* PurchaseTextTop.swift */; };
@@ -87,11 +85,13 @@
 		845A3A24257BF2C100735EDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845A3A23257BF2C100735EDF /* Preview Assets.xcassets */; };
 		845A3A27257BF2C100735EDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845A3A25257BF2C100735EDF /* LaunchScreen.storyboard */; };
 		845A3A44257BF97800735EDF /* SoundsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845A3A43257BF97800735EDF /* SoundsList.swift */; };
+		846294F0257DE13700542487 /* InAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846294EF257DE13700542487 /* InAppManager.swift */; };
+		846294F2257DE92600542487 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8453056D257D0E3D00F0816E /* StoreKit.framework */; };
+		846294FE257DEDA200542487 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846294FD257DEDA200542487 /* TestView.swift */; };
 		846DBDAD257D29460055AAE7 /* BannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDAC257D29460055AAE7 /* BannerVC.swift */; };
 		846DBDB0257D29C10055AAE7 /* AdsIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDAF257D29C10055AAE7 /* AdsIDs.swift */; };
-		846DBDB6257D2D8B0055AAE7 /* InAppPurchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */; };
-		846DBDB7257D2D8B0055AAE7 /* InAppStoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */; };
-		846DBDB8257D2D8B0055AAE7 /* StoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */; };
+		846DBDBF257D4A010055AAE7 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDBE257D4A010055AAE7 /* ScreenSize.swift */; };
+		846DBDC5257D4E510055AAE7 /* InterstitialAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846DBDC4257D4E510055AAE7 /* InterstitialAD.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,7 +141,6 @@
 		845304CE257C8C3E00F0816E /* SoundService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundService.swift; sourceTree = "<group>"; };
 		845304D3257C926800F0816E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		845304DA257C932100F0816E /* AppLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogo.swift; sourceTree = "<group>"; };
-		845304DF257C974100F0816E /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
 		845304EB257CA1A200F0816E /* CustomRoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedButtonStyle.swift; sourceTree = "<group>"; };
 		845304EF257CA60200F0816E /* HelpButtonsStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpButtonsStack.swift; sourceTree = "<group>"; };
 		845304F3257CAEC300F0816E /* SoundboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardView.swift; sourceTree = "<group>"; };
@@ -179,12 +178,12 @@
 		845A3A26257BF2C100735EDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845A3A28257BF2C100735EDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845A3A43257BF97800735EDF /* SoundsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsList.swift; sourceTree = "<group>"; };
+		846294EF257DE13700542487 /* InAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAppManager.swift; sourceTree = "<group>"; };
+		846294FD257DEDA200542487 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		846DBDAC257D29460055AAE7 /* BannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerVC.swift; sourceTree = "<group>"; };
 		846DBDAF257D29C10055AAE7 /* AdsIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdsIDs.swift; sourceTree = "<group>"; };
-		846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppPurchView.swift; sourceTree = "<group>"; };
-		846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InAppStoreModel.swift; sourceTree = "<group>"; };
-		846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreApp.swift; sourceTree = "<group>"; };
-		846DBDBA257D2DAD0055AAE7 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		846DBDBE257D4A010055AAE7 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		846DBDC4257D4E510055AAE7 /* InterstitialAD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +191,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8453056E257D0E3D00F0816E /* StoreKit.framework in Frameworks */,
 				255B62467023EE9A0F7B1092 /* Pods_AmongUSSoundboard.framework in Frameworks */,
+				846294F2257DE92600542487 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +220,7 @@
 		845304DE257C973100F0816E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				845304DF257C974100F0816E /* ScreenSize.swift */,
+				846DBDBE257D4A010055AAE7 /* ScreenSize.swift */,
 				8453050E257CDE1400F0816E /* Ext+View.swift */,
 				84530567257D060100F0816E /* IAPManager.swift */,
 			);
@@ -333,7 +332,7 @@
 		845A3A19257BF2C000735EDF /* AmongUSSoundboard */ = {
 			isa = PBXGroup;
 			children = (
-				846DBDB2257D2D670055AAE7 /* InApp */,
+				846294EE257DE12900542487 /* IAP */,
 				846DBDAB257D29310055AAE7 /* Advertisement */,
 				845A3A3E257BF3E900735EDF /* Core */,
 				845304DE257C973100F0816E /* Utils */,
@@ -459,24 +458,23 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		846294EE257DE12900542487 /* IAP */ = {
+			isa = PBXGroup;
+			children = (
+				846294EF257DE13700542487 /* InAppManager.swift */,
+				846294FD257DEDA200542487 /* TestView.swift */,
+			);
+			path = IAP;
+			sourceTree = "<group>";
+		};
 		846DBDAB257D29310055AAE7 /* Advertisement */ = {
 			isa = PBXGroup;
 			children = (
 				846DBDAC257D29460055AAE7 /* BannerVC.swift */,
 				846DBDAF257D29C10055AAE7 /* AdsIDs.swift */,
+				846DBDC4257D4E510055AAE7 /* InterstitialAD.swift */,
 			);
 			path = Advertisement;
-			sourceTree = "<group>";
-		};
-		846DBDB2257D2D670055AAE7 /* InApp */ = {
-			isa = PBXGroup;
-			children = (
-				846DBDB3257D2D8B0055AAE7 /* InAppPurchView.swift */,
-				846DBDB4257D2D8B0055AAE7 /* InAppStoreModel.swift */,
-				846DBDB5257D2D8B0055AAE7 /* StoreApp.swift */,
-				846DBDBA257D2DAD0055AAE7 /* Configuration.storekit */,
-			);
-			path = InApp;
 			sourceTree = "<group>";
 		};
 		ED4E7382ECDC85DAB42716B2 /* Pods */ = {
@@ -654,26 +652,26 @@
 				8453050F257CDE1400F0816E /* Ext+View.swift in Sources */,
 				84530581257D1B2E00F0816E /* PurchaseTextModifier.swift in Sources */,
 				84530521257CE1CB00F0816E /* StopNavigationButton.swift in Sources */,
+				846294FE257DEDA200542487 /* TestView.swift in Sources */,
 				845A3A1B257BF2C000735EDF /* AppDelegate.swift in Sources */,
-				845304E0257C974100F0816E /* ScreenSize.swift in Sources */,
+				846DBDBF257D4A010055AAE7 /* ScreenSize.swift in Sources */,
 				845304FD257CAF1500F0816E /* SoundButtonCell.swift in Sources */,
 				84530517257CE06500F0816E /* SoundButtonModifier.swift in Sources */,
 				84530571257D112700F0816E /* PurchaseView.swift in Sources */,
 				845304F0257CA60200F0816E /* HelpButtonsStack.swift in Sources */,
 				84530579257D1A5F00F0816E /* AmongInfoImage.swift in Sources */,
 				84530514257CE04A00F0816E /* SoundButtonTextModifier.swift in Sources */,
+				846294F0257DE13700542487 /* InAppManager.swift in Sources */,
 				846DBDAD257D29460055AAE7 /* BannerVC.swift in Sources */,
 				84530584257D1B5A00F0816E /* PurchaseButton.swift in Sources */,
 				8453057D257D1AA000F0816E /* PurchaseTextTop.swift in Sources */,
 				84530504257CD64700F0816E /* CustomNavigationViewsStyle.swift in Sources */,
+				846DBDC5257D4E510055AAE7 /* InterstitialAD.swift in Sources */,
 				845304F4257CAEC300F0816E /* SoundboardView.swift in Sources */,
 				845A3A1D257BF2C000735EDF /* SceneDelegate.swift in Sources */,
 				845304DB257C932100F0816E /* AppLogo.swift in Sources */,
-				846DBDB7257D2D8B0055AAE7 /* InAppStoreModel.swift in Sources */,
 				84530469257C7F0B00F0816E /* AmongSound.swift in Sources */,
-				846DBDB6257D2D8B0055AAE7 /* InAppPurchView.swift in Sources */,
 				8453058C257D1D1300F0816E /* PurchaseControlService.swift in Sources */,
-				846DBDB8257D2D8B0055AAE7 /* StoreApp.swift in Sources */,
 				845304EC257CA1A200F0816E /* CustomRoundedButtonStyle.swift in Sources */,
 				845304D4257C926800F0816E /* Colors.swift in Sources */,
 				845A3A1F257BF2C000735EDF /* MainView.swift in Sources */,

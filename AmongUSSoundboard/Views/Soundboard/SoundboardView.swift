@@ -13,8 +13,12 @@ struct SoundboardView: View {
                                 GridItem(.flexible()),
                                 GridItem(.flexible())]
     
+    
+    var interstitialStop:Interstitial
+    
     init() {
         UITableView.appearance().backgroundColor = .clear
+        self.interstitialStop = Interstitial(interstitialID: AdsIds.stopClickedID)
     }
     
     var body: some View {
@@ -31,6 +35,7 @@ struct SoundboardView: View {
             }
         }
         .navigationBarItems(trailing: StopNavigationButton(action: { SoundService.shared.stopSound()
+            interstitialStop.showAd()
         }))
         
     }
